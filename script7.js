@@ -2,9 +2,9 @@
 
 // DEFINIZIONE ALGORITMO:
 // 1. Ingredienti (input)
-
+// Segno matematico, valore: +, -, *, /, 0, ..., 9
 // 2. Qual è il nostro output?
-
+//  "il risultato"   
 // Elementi utili dal DOM:
 // Cosa devo catturare?
 
