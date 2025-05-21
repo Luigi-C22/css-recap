@@ -23,10 +23,29 @@
 // Bonus
 // E se volessimo implementare le operazioni a catena? 
 
+//Elementi del DOM
 let display = document.getElementById("display"); // Elemnto singolo HTM
 let operatorEls = document.getElementsByClassName("operator"); // Cosa sarà salvato qau dentro? Array!
 let digitEls = document.getElementsByClassName("digit"); // Array
 
+//Input fondamentali
 let firstVal = ""; // Valore iniziale
 let secondVal = ""; // Valore finale
 let operator =  null; // Operatore
+
+//Listeners
+for(const operatorEl of operatorEls) {
+    operatorEl.addEventListener("click", (event) => {
+        console.log(event.target.value);
+    });
+}
+
+//Operandi
+for(const digitEl of digitEls) {
+    digitEl.addEventListener("click", (event) => {
+        
+        firstVal += event.target.value;
+
+        console.log(firstVal);
+    });
+}
