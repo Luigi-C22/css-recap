@@ -43,9 +43,18 @@ for(const operatorEl of operatorEls) {
 //Operandi
 for(const digitEl of digitEls) {
     digitEl.addEventListener("click", (event) => {
-        
-        firstVal += event.target.value;
-
-        console.log(firstVal);
-    });
+        if(operator == null) {
+            firstVal += event.target.value;
+            display.value = firstVal;
+         } else {
+            secondVal += event.target.value;
+            display.value = secondVal;
+         }
+       
+     });
+}
+function resultCalc() {
+    if (!firstVal || !secondVal || operator == null) {
+        return;
+    }   
 }
