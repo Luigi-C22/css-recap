@@ -36,7 +36,7 @@ let operator =  null; // Operatore
 //Listeners
 for(const operatorEl of operatorEls) {
     operatorEl.addEventListener("click", (event) => {
-        console.log(event.target.value);
+        operator = event.target.value;
     });
 }
 
