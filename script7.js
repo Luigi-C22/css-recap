@@ -56,5 +56,27 @@ for(const digitEl of digitEls) {
 function resultCalc() {
     if (!firstVal || !secondVal || operator == null) {
         return;
-    }   
+    } 
+    switch (operator) {
+        case '+': //addizione
+            finResult = +firstVal + +secondVal;
+            display.value = finResult;
+            break;
+        case '-': //Sottrazione
+            finResult = +firstVal - +secondVal;
+            display.value = finResult;
+            break;      
+        case '*': //Moltiplicazione
+            finResult = +firstVal * +secondVal;
+            display.value = finResult;
+            break;
+        case '/': //Divisione
+        finResult = +firstVal / +secondVal;
+        display.value = finResult;
+            break;
+         
+    }  
+    firstVal = ""
+    secondVal = ""
+    operator = null;
 }
