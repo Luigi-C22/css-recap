@@ -32,7 +32,7 @@ let digitEls = document.getElementsByClassName("digit"); // Array
 let firstVal = ""; // Valore iniziale
 let secondVal = ""; // Valore finale
 let operator =  null; // Operatore
-
+let finResult = null; // Risultato finale
 //Listeners
 for(const operatorEl of operatorEls) {
     operatorEl.addEventListener("click", (event) => {
@@ -60,22 +60,30 @@ function resultCalc() {
     switch (operator) {
         case '+': //addizione
             finResult = +firstVal + +secondVal;
-            display.value = finResult;
+            
             break;
         case '-': //Sottrazione
             finResult = +firstVal - +secondVal;
-            display.value = finResult;
+            
             break;      
         case '*': //Moltiplicazione
             finResult = +firstVal * +secondVal;
-            display.value = finResult;
+            
             break;
         case '/': //Divisione
         finResult = +firstVal / +secondVal;
-        display.value = finResult;
+        
             break;
          
-    }  
+    } 
+    display.value = finResult; 
+    firstVal = ""
+    secondVal = ""
+    operator = null;
+}
+
+function resetCalc() {
+    display.value = "0";
     firstVal = ""
     secondVal = ""
     operator = null;
