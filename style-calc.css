@@ -12,7 +12,7 @@ html {
 
 .calculator {
   border: 5px solid #f06666;
-  border-radius: 25px;
+  border-radius: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -91,4 +91,13 @@ button:hover {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #0a12a2;
   border-color:red solid 2px ;
+}
+
+.visually-hidden {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #dce30e;
+  font-size: 1.5rem;
+  ;
+
 }
