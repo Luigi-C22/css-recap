@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" class="calculator-screen" id="display" value="0" disabled />
+        <label for="display" class="visually-hidden">Casio Calculator</label>
+        <input type="text" class="calculator-screen" id="display" value="0" disabled placeholder="Calculator display" title="Calculator display" />
         
         <div class="calculator-keys">
            
@@ -33,7 +34,7 @@
             <button type="button" class="digit" value="0">0</button>
             <button type="button" class="digit decimal" value=".">.</button>
 
-            <button type="button" class="all-clear" value="all-clear">AC</button>
+            <button type="button" class="all-clear" value="all-clear" onclick = "resetCalc()">AC</button>
             <button type="button" class="equal-sign" value="=" onclick = "resultCalc()">=</button>
         </div>
     </div>
