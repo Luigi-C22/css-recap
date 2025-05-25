@@ -12,7 +12,7 @@ html {
 
 .calculator {
   border: 5px solid #f06666;
-  border-radius: 5px;
+  border-radius: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
