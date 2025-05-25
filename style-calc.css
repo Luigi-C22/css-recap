@@ -88,9 +88,9 @@ button:hover {
 
 .digit {
   font-size:x-large;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #0a12a2;
-  border-color:red solid 2px ;
+  border-color: red solid 2px;
 }
 
 .visually-hidden {
