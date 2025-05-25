@@ -83,6 +83,7 @@ function resultCalc() {
     operator = null;
 }
 
+// Funzione per il reset del calcolatore
 function resetCalc() {
     display.value = "0";
     firstVal = ""
