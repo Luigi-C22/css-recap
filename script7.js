@@ -77,7 +77,8 @@ function resultCalc() {
          
     } 
     display.value = finResult; 
-    firstVal = ""
+    // Inizializzazione degli operatori e segno operazione
+    firstVal = finResult
     secondVal = ""
     operator = null;
 }
