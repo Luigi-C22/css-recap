@@ -76,13 +76,13 @@ function resultCalc() {
             break;
          
     } 
+    // Visualizzazione del risultato finale
     display.value = finResult; 
     // Inizializzazione degli operatori e segno operazione
     firstVal = finResult
     secondVal = ""
     operator = null;
 }
-
 // Funzione per il reset del calcolatore
 function resetCalc() {
     display.value = "0";
