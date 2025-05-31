@@ -1,4 +1,4 @@
-html {
+/* html {
   font-size: 62.5%;
   box-sizing: border-box;
   background-color: #636262;
@@ -100,4 +100,12 @@ button:hover {
   font-size: 1.5rem;
   ;
 
+} */
+ a.external::before {
+  content: "⚠️ "; /* Simbolo del link */
+  color: blue;
+}
+label.required::after {
+  content: " *";
+  color: red;
 }
