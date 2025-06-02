@@ -97,10 +97,28 @@
 <button id="my-btn">Invia modulo</button><br><br>
 <button id="another-btn">Change my bg</button><br><br>
 <button id="again-btn">Focus me</button><br><br>
-<a href="http://example.com" id="my-link">A simple link</a>
+<a href="http://example.com" id="my-link">A simple link</a><br>
 
 <!-- 8. Before, After, First-line, first-letter -->
- <!-- <style> -->
+ <br><br>
+ <style>
+    div.my-div::before{
+        content: "⚠️";
+    }
+    div.my-div::after {
+        content: "🌹";
+    }
+    div.another-div::first-letter {
+        font-size: 2em;
+        color: red;
+    }
+    div.another-div::first-line {
+        color: blue;
+    }
+ </style>
+ <div class="my-div">My main text!</div>
+ <div class="another-div">Hey there! <br> I'm on a new line</div>
+    
 
     </body>
 </html>
